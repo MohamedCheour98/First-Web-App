@@ -1,20 +1,27 @@
 {
-  "name": "first-express-app",
+  "name": "expressjs-with-mongoose",
   "version": "1.0.0",
-  "main": "backend.js",
+  "description": "A sample backend for our class app with database access (MongoDB) using Mongoose.",
+  "main": "backend_with_db.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon backend.js",
-    "start": "node backend.js"
+    "test": "jest --forceExit",
+    "coverage": "jest --collectCoverage --forceExits",
+    "dev": "nodemon backend_with_db.js",
+    "start": "node backend_with_db.js"
   },
-  "author": "Mohamed Cheour",
+  "author": "BJ Klingenberg (based on Dr. DaSilva's code",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.2"
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jest": "^27.5.1",
+    "mongoose": "^6.0.3"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "eslint": "^8.8.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.28.0",
+    "nodemon": "^2.0.12"
   }
 }
